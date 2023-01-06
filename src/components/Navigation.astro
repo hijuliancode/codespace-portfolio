@@ -1,10 +1,19 @@
 ---
 ---
 
-<nav>
-  <a href="">home</a>
-  <a href="">code</a>
-  <a href="">design</a>
-  <a href="">culture</a>
-  <a href="">say hello!</a>
+<nav class="ml-auto" tabindex="0">
+  <a href="/" title="home">home</a>
+  <a href="/code" title="code">code</a>
+  <a href="/design" title="design">design</a>
+  <a href="/culture" title="culture">culture</a>
+  <a href="/say-hello  " title="say hello!">say hello!</a>
 </nav>
+
+<style>
+  nav {
+    @apply flex items-center gap-1;
+  }
+  nav a {
+    @apply hover:bg-gray-200 focus:bg-gray-200 leading-none py-1 px-2 rounded-md transition duration-150 ease-in;
+  }
+</style>

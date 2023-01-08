@@ -1,7 +1,8 @@
 ---
+const { isHidden } = Astro.props;
 ---
 
-<nav class="ml-auto" tabindex="0">
+<nav tabindex="0" class:list={[{ hidden: isHidden }]}>
   <a href="/" title="home">home</a>
   <a href="/code" title="code">code</a>
   <a href="/design" title="design">design</a>
@@ -11,7 +12,7 @@
 
 <style>
   nav {
-    @apply flex items-center gap-1;
+    @apply flex items-center gap-1 ml-auto;
   }
   nav a {
     @apply leading-none py-1 px-2 rounded-md transition duration-150 ease-in;

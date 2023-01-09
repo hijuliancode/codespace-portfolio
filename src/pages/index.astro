@@ -6,10 +6,12 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Welcome to Astro.">
-  <Box>
-    <Header />
-  </Box>
-  <Navigation />
+  <div class="flex flex-col gap-2 h-full pb-3">
+    <Box>
+      <Header />
+    </Box>
+    <Navigation />
+  </div>
 </MainLayout>
 
 <style></style>

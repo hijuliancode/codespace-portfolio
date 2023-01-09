@@ -16,7 +16,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-gray-100 py-8 h-full">
+  <body>
     <slot />
   </body>
 </html>
@@ -35,10 +35,10 @@ const { title } = Astro.props;
   }
   html,
   body {
-    @apply h-full;
+    @apply h-full bg-gray-100;
   }
   body {
-    @apply antialiased;
+    @apply antialiased py-8 px-4;
     font-family: "Noto Sans", sans-serif;
   }
   code {

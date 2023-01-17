@@ -2,21 +2,21 @@
 ---
 
 <div class="hero">
-  <div class="hero-item hero-item-a">Welcome</div>
-  <div class="hero-item hero-item-b">Me</div>
+  <div class="hero-item hero-item-a">Me</div>
+  <div class="hero-item hero-item-b">Welcome</div>
 </div>
 
 <style>
   .hero {
-    @apply flex h-56 gap-4;
+    @apply flex flex-col gap-4 md:flex-row md:h-56;
   }
   .hero-item {
-    @apply bg-gray-200 p-3 rounded-lg;
+    @apply bg-gray-200 p-3 rounded-lg w-full;
   }
   .hero-item-a {
-    @apply w-9/12;
+    @apply h-36 md:h-full order-1 md:order-2 md:w-4/12 lg:w-3/12;
   }
   .hero-item-b {
-    @apply w-3/12;
+    @apply order-2 md:order-1 md:w-8/12 lg:w-9/12;
   }
 </style>

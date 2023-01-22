@@ -1,0 +1,19 @@
+---
+import type { IWorkProps } from "../commons/interfaces";
+import Card from "./Card.astro";
+
+const works: IWorkProps[] = [];
+---
+
+<div class="section-works">
+  {
+    works.map((work: IWorkProps) => (
+      <Card name={work.name} imageUrl={work.url_image} />
+    ))
+  }
+</div>
+<style>
+  .section-works {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  }
+</style>

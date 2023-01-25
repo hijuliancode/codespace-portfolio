@@ -1,0 +1,32 @@
+{
+  "works": [
+    {
+      "name": "Cedar Systems (Web)",
+      "description": "Modern software solutions for pest control managers and technicians.",
+      "url_image": "string",
+      "url_project": "string",
+      "teamName": "Cedar Systems"
+    },
+    {
+      "name": "Cedar Systems (Mobile)",
+      "description": "Android and iOS that allows you to manage team members and allows technicians to complete jobs efficiently from anywhere.",
+      "url_image": "string",
+      "url_project": "https://play.google.com/store/apps/details?id=com.cedarpestsoftware.mobileapp",
+      "teamName": "Cedar Systems"
+    },
+    {
+      "name": "Auna (web & mobile)",
+      "description": "Integrated healthcare provider.",
+      "url_image": "string",
+      "url_project": "https://www.auna.org/pe",
+      "teamName": "Auna"
+    },
+    {
+      "name": "Webcreek",
+      "description": "Nearshoring Solutions - Custom Software Development.",
+      "url_image": "string",
+      "url_project": "https://www.webcreek.com/es/casos-de-estudio",
+      "teamName": "Webcreek"
+    }
+  ]
+}
